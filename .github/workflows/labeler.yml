@@ -1,9 +1,8 @@
 name: "Pull Request Labeler"
 on:
   workflow_dispatch:
-  issues:
-    types:
-      - opened
+  pull_request_target:
+    types: [opened, closed, reopened, edited, ready_for_review]
 
 jobs:
   triage:
