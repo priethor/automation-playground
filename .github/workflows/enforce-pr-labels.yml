@@ -15,3 +15,4 @@ jobs:
           count: 1
           labels: "bug, enhancement, documentation, good first issue"
           add_comment: true
+          message: "**Label error**. \n To merge the PR, it requires {{ errorString }} {{ count }} label indicating the type of PR.\n- The type-related labels available are: {{ provided }}.\n- Labels found: {{ applied }}."
